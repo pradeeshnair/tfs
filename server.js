@@ -7,7 +7,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://tfs:<PASSWORD>@cluster0-shard-00-00-omg4j.mongodb.net:27017,cluster0-shard-00-01-omg4j.mongodb.net:27017,cluster0-shard-00-02-omg4j.mongodb.net:27017/tfs?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', {useNewUrlParser: true});
+mongoose.connect('mongodb://tfs:Turing%234321@cluster0-shard-00-00-omg4j.mongodb.net:27017,cluster0-shard-00-01-omg4j.mongodb.net:27017,cluster0-shard-00-02-omg4j.mongodb.net:27017/tfs?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', {useNewUrlParser: true});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
