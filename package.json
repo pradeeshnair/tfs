@@ -2,10 +2,10 @@
   "name": "Turing_Fusion_Labs",
   "version": "1.0.0",
   "description": "Restful Services for Turing Fusion Labs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "REST",
@@ -13,9 +13,9 @@
   ],
   "author": "Prad",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^1.18.10"
-  },
+//  "devDependencies": {
+//    "nodemon": "^1.18.10"
+//  },
   "dependencies": {
     "express": "^4.16.4",
     "mongoose": "^5.4.12"
