@@ -2,8 +2,12 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 7000,
     mongoose = require('mongoose'),
-    Item = require('./api/model/tfsitemmodel'), //created model loading here
+    Item = require('./api/model/tfsitemmodel'),
+    User = require('./api/model/tfsusermodel'),//created model loading here
     bodyParser = require('body-parser');
+
+app.set('view engine', 'ejs')
+// app.use(express.static('public'));
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
